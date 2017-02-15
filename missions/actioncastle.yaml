@@ -1,12 +1,12 @@
 ---
 name: Action Castle
 locations:
-  cottage:
-    name: Cottage
-    description : You are standing in a small cottage.
-    items : fishpole
-    exits :
-      Out : gardenpath
+    cottage:
+        name: Cottage
+        description : You are standing in a small cottage.
+        items : fishpole
+        exits :
+            Out : gardenpath
     gardenpath:
         name: Garden Path
         description : You are standing on a lush garden path.
@@ -162,7 +162,8 @@ actors:
             kiss: She slaps you. "Not until we're wed!"
             marry : DoMarryAction()
             marry (no crown): "You're not royalty."
-            marry (has crown): "My father's crown! You have put his soul at rest and you may now succeed him! I accept." Places crown on your head. Set royalty = 1. Transform koguard to humbleguard. Change the description of the throne room to include revelers
+            marry (has crown): |
+                "My father's crown! You have put his soul at rest and you may now succeed him! I accept." Places crown on your head. Set royalty = 1. Transform koguard to humbleguard. Change the description of the throne room to include revelers
     queen:
         name: Queen
         description: The queen is beautiful, happy, and has found her king.
@@ -170,7 +171,7 @@ actors:
             generic : What would you like to talk about?
             throne : Only the king may sit on the throne.
         actions :
-            kiss: *smooch*
+            kiss: \*smooch\*
     door:
         name: Locked Door
         description: The guard is brandishing his short sword.
@@ -221,8 +222,8 @@ items:
     candle :
         name : Strange Candle
         description : The candle is covered in strange runes.
-            actions:
-                read : The runes seem to be a spell of exorcism.
+        actions:
+            read : The runes seem to be a spell of exorcism.
     crown:
         name : Crown
         description: A golden crown fit for royalty.
