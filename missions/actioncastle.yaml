@@ -1,12 +1,12 @@
 ---
 name: Action Castle
 locations:
-    cottage:
-        name: Cottage
-        description : You are standing in a small cottage.
-        items : fishpole
-        exits :
-            Out : gardenpath
+  cottage:
+    name: Cottage
+    description : You are standing in a small cottage.
+    items : fishpole
+    exits :
+      Out : gardenpath
     gardenpath:
         name: Garden Path
         description : You are standing on a lush garden path.
